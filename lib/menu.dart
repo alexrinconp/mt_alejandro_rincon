@@ -56,11 +56,15 @@ class _menuState extends State<menu> {
         child: Column(
           children: [
             Container(
-              height: 100,
+              height: 75,
               child: Center(
                 child: Text(
                   "Nuestro Platillo del mes",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.green.withOpacity(1.0)),
                 ),
               ),
             ),

@@ -6,7 +6,7 @@ class inicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Quienes somos')),
+        appBar: AppBar(title: Text('¿Quienes somos?')),
         body: Center(
           child: Column(children: [
             Container(
@@ -36,11 +36,29 @@ class inicio extends StatelessWidget {
               ),
             ),
             Container(
+              height: 50,
+              child: Center(
+                child: Text(
+                    "Somos una cadena de restaurantes de comida italiana fundada en 1982. Queremos que en nuestro restaurante siempre te sientas como en casa",
+                    style:
+                        TextStyle(fontSize: 15, fontStyle: FontStyle.italic)),
+              ),
+            ),
+            Container(
               height: 250,
               child: Center(
                   child: Image(
                       image: NetworkImage(
                           "https://resizer.otstatic.com/v2/photos/wide-huge/1/24012706.jpg"))),
+            ),
+            Container(
+              height: 25,
+              child: Center(
+                child: Text(
+                  "Nuestro Equipo:",
+                  style: TextStyle(fontSize: 15, fontStyle: FontStyle.italic),
+                ),
+              ),
             ),
             Container(
               height: 250,
